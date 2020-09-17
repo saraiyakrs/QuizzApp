@@ -13,24 +13,47 @@ public class QuizApp {
            System.out.println("Hello");
            System.out.println("What color is the sky?");
            String answer1 = kboard.nextLine();
-           if(answer1.equals("Blue ")) {
+           if(answer1.equals("Blue")) {
                //give them a point
                score++;
                System.out.println("correct!");
           
            }
-            
+           else if(answer1.equals("blue")); {
+              //mark wrong     
+               System.out.println("WRONG, try again!");
+            System.out.println("What color is the sky?");
+             answer1 = kboard.nextLine();
+           if(answer1.equals("Blue")) {
+               //give them a point
+               score++;
+               System.out.println("correct!");
+           }
+               
+               
+              
+                       }       
                System.out.println("What planet are you living on?");
                String answer2 = kboard.nextLine();
-               if(answer2.equals("Earth ")) {
+               if(answer2.equals("Earth")) {
                    //give another point
                    score++;
                    System.out.println("Correct!");
+                   
+                    if (answer2.equals("earth")); {
+              //mark wrong     
+               System.out.println("WRONG, try again!");
+            System.out.println("What planet are you living on?");
+             answer2 = kboard.nextLine();
+           if(answer2.equals("Earth")) {
+               //give them a point
+               score++;
+               System.out.println("correct!");
            }
            
                System.out.println("What galaxy do we live in?");
                String answer3 = kboard.nextLine();
-               if(answer3.equals("MilkyWay ")) {
+               if(answer3.equals("MilkyWay")) {
                    //give another point
                    score++;
                    System.out.println("Correct!"); 
@@ -39,7 +62,7 @@ public class QuizApp {
                
                System.out.println("Does the Earth have a moon?");
                String answer4 = kboard.nextLine();
-               if(answer4.equals("Correct ")) {
+               if(answer4.equals("Yes")) {
                    //give another point
                    score++;
                    System.out.println("Correct!"); 
@@ -47,7 +70,7 @@ public class QuizApp {
             }
                System.out.println("How many planets are in the solar system");
                String answer5 = kboard.nextLine();
-               if(answer5.equals("8 ")) {
+               if(answer5.equals("8")) {
                    //give another point
                    score++;
                    System.out.println("Correct!"); 
